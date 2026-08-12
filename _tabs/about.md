@@ -42,7 +42,7 @@ Este sitio está construido bajo una arquitectura estática moderna, optimizada 
 
 ## Contacto y Código Fuente
 
-- **Repositorio del Blog:** [github.com/araigumadev/blog-basesDeDatos-UdeA-2026-2](https://github.com/araigumadev)
+- **Repositorio del Blog:** [github.com/araigumadev/blog-basesDeDatos-UdeA-2026-2](https://github.com/araigumadev/blog-basesDeDatos-UdeA-2026-2)
 - **GitHub:** [@araigumadev](https://github.com/araigumadev)
 - **Ubicación:** Medellín, Colombia
-- **Email**: [mateo.vargast@udea.edu.co](mateo.vargast@udea.edu.co)
+- **Email**: [mateo.vargast@udea.edu.co](mailto:mateo.vargast@udea.edu.co)
