@@ -437,7 +437,7 @@ def registrar_venta(cliente_id: int, videojuego_id: int, cantidad: int):
 
 ## 8. Referencias y Enlaces de Interés
 
-1. **Gray, J. (1981)**: *The Transaction Concept: Virtues and Limitations*. Proceedings of the 7th International Conference on Very Large Data Bases (VLDB), 144–154. [http://hdl.handle.net/10068/491563](http://hdl.handle.net/10068/491563).
+1. **Gray, J. (1981)**: *The Transaction Concept: Virtues and Limitations*. Proceedings of the 7th International Conference on Very Large Data Bases (VLDB), 144–154. [https://hdl.handle.net/10068/491563](https://hdl.handle.net/10068/491563).
 2. **PostgreSQL Documentation**: *Transaction Isolation, Explicit Locking and Concurrency Control*. [https://www.postgresql.org/docs/current/mvcc.html](https://www.postgresql.org/docs/current/mvcc.html).
 3. **Bernstein, P. A., Hadzilacos, V., & Goodman, N. (1987)**: *Concurrency Control and Recovery in Database Systems*. Addison-Wesley.
 4. **Docker Documentation**: *Compose file version 3 reference and Multi-Container Application Architecture*. [https://docs.docker.com/compose/compose-file/](https://docs.docker.com/compose/compose-file/).
