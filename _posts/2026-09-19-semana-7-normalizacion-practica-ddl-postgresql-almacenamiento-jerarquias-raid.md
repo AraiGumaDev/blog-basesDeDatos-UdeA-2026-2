@@ -572,11 +572,11 @@ El resultado recuperado coincide bit a bit con el contenido original de $D_2 = 1
 
 ## 6. Referencias y Enlaces de Interés
 
-1. **Patterson, D. A., Gibson, G., & Katz, R. H. (1988)**. *A Case for Redundant Arrays of Inexpensive Disks (RAID)*. ACM SIGMOD International Conference on Management of Data, 109–116. [https://doi.org/10.1145/50202.50214](https://doi.org/10.1145/50202.50214).
-2. **Codd, E. F. (1974)**. *Recent Investigations in Relational Data Base Systems*. IFIP Congress, 1017–1021. IBM Research Report RJ1385. [https://dl.acm.org/doi/10.5555/800182.810570](https://dl.acm.org/doi/10.5555/800182.810570).
-3. **PostgreSQL Global Development Group (2026)**. *PostgreSQL 16 Documentation: Chapter 73 - Database Physical Storage and TOAST*. [https://www.postgresql.org/docs/current/storage.html](https://www.postgresql.org/docs/current/storage.html).
+1. **Patterson, D. A., Gibson, G., & Katz, R. H. (1988)**. *A Case for Redundant Arrays of Inexpensive Disks (RAID)*. University of California, Berkeley & CMU Archive. [https://www.cs.cmu.edu/~garth/RAIDpaper/Patterson88.pdf](https://www.cs.cmu.edu/~garth/RAIDpaper/Patterson88.pdf).
+2. **Codd, E. F. (1970)**. *A Relational Model of Data for Large Shared Data Banks*. Communications of the ACM, 13(6), 377–387. [https://en.wikipedia.org/wiki/A_Relational_Model_of_Data_for_Large_Shared_Data_Banks](https://en.wikipedia.org/wiki/A_Relational_Model_of_Data_for_Large_Shared_Data_Banks).
+3. **PostgreSQL Global Development Group (2026)**. *PostgreSQL Documentation: Chapter 73 - Database Physical Storage and TOAST*. [https://www.postgresql.org/docs/current/storage.html](https://www.postgresql.org/docs/current/storage.html).
 4. **LTO Program Technology Provider Companies (HP, IBM, Quantum) (2026)**. *Linear Tape-Open Ultrium Specifications & Roadmap*. [https://www.lto.org/technology/](https://www.lto.org/technology/).
-5. **Linux Kernel Documentation (2026)**. *RAID and mdadm administration in Linux Storage Subsystem*. [https://docs.kernel.org/driver-api/md.html](https://docs.kernel.org/driver-api/md.html).
+5. **Linux Kernel Documentation (2026)**. *RAID and mdadm administration in Linux Storage Subsystem*. [https://docs.kernel.org/admin-guide/md.html](https://docs.kernel.org/admin-guide/md.html).
 
 ---
 

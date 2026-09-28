@@ -412,10 +412,10 @@ flowchart LR
 ## 5. Referencias y Enlaces de Interés
 
 1. **Silberschatz, A., Korth, H. F., & Sudarshan, S. (2020)**. *Database System Concepts* (7th ed.). McGraw-Hill Education. Chapter 12: *Physical Storage Systems & File Structure*. [https://www.db-book.com/](https://www.db-book.com/).
-2. **Ramakrishnan, R., & Gehrke, J. (2003)**. *Database Management Systems* (3rd ed.). McGraw-Hill. Chapter 9: *Storing Data: Disks and Files (Slotted Page Architecture)*. [http://pages.cs.wisc.edu/~dbbook/](http://pages.cs.wisc.edu/~dbbook/).
-3. **Patterson, D. A., Gibson, G., & Katz, R. H. (1988)**. *A Case for Redundant Arrays of Inexpensive Disks (RAID)*. ACM SIGMOD International Conference on Management of Data, 109–116. [https://doi.org/10.1145/50202.50214](https://doi.org/10.1145/50202.50214).
+2. **Ramakrishnan, R., & Gehrke, J. (2003)**. *Database Management Systems* (3rd ed.). McGraw-Hill. Chapter 9: *Storing Data: Disks and Files (Slotted Page Architecture)*. [https://pages.cs.wisc.edu/~dbbook/](https://pages.cs.wisc.edu/~dbbook/).
+3. **Patterson, D. A., Gibson, G., & Katz, R. H. (1988)**. *A Case for Redundant Arrays of Inexpensive Disks (RAID)*. University of California, Berkeley & CMU Archive. [https://www.cs.cmu.edu/~garth/RAIDpaper/Patterson88.pdf](https://www.cs.cmu.edu/~garth/RAIDpaper/Patterson88.pdf).
 4. **PostgreSQL Global Development Group (2026)**. *PostgreSQL Documentation: Chapter 73 - Database Physical Storage and Page Layout (PageHeaderData & ItemIdData)*. [https://www.postgresql.org/docs/current/storage-page-layout.html](https://www.postgresql.org/docs/current/storage-page-layout.html).
-5. **Oracle Corporation (2026)**. *Oracle Database Concepts: Schema Objects - Overview of Table Clusters and Cluster Keys*. [https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/table-clusters.html](https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/table-clusters.html).
+5. **Oracle Corporation (2026)**. *Oracle Database Concepts: Schema Objects - Overview of Tables and Table Clusters*. [https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/tables-and-table-clusters.html](https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/tables-and-table-clusters.html).
 
 ---
 
