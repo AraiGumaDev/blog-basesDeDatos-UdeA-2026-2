@@ -119,7 +119,6 @@ $$h(247) = \mathbf{9}$$
 
 El motor de base de datos direcciona la lectura o escritura directamente a la **cubeta número 9** en tiempo constante $\mathcal{O}(1)$ en términos de E/S de disco, sin consultar estructuras arbóreas intermedias.
 
-> [!WARNING]
 > **Colisiones y Búsquedas por Rango**: Si múltiples claves distintas producen el mismo residuo modular ($h(x_1) = h(x_2)$), se produce una **colisión**. El SGBD aloja los registros colisionados en la misma cubeta hasta agotar su capacidad, momento en el cual encadena páginas de desbordamiento (*overflow blocks*), degradando el tiempo de acceso. Asimismo, las estructuras Hash **no preservan el orden secuencial** ($x_1 < x_2 \nRightarrow h(x_1) < h(x_2)$), por lo que resultan ineficientes para búsquedas por rangos (`BETWEEN`, `<`, `>`).
 
 ```sql
@@ -176,7 +175,6 @@ FROM personas
 WHERE estado_civil = 'Soltero';
 ```
 
-> [!IMPORTANT]
 > **Penalización en Entornos Transaccionales (OLTP)**: Los índices *Bitmap* son ideales para bodegas de datos (*Data Warehouses* / OLAP) y tablas de parámetros de solo lectura. Sin embargo, son **contraproducentes en tablas con alta concurrencia de `INSERT`, `UPDATE` o `DELETE`**, ya que bloquear una entrada de un vector de bits comprimido bloquea simultáneamente cientos de filas adyacentes, serializando las transacciones concurrentes.
 
 ---
@@ -256,7 +254,6 @@ flowchart LR
     REDIS -.->|"2. Cache Miss (Solo al expirar TTL)"| DB[("Base de Datos Relacional<br/>Tabla de Parámetros / Flags")]
 ```
 
-> [!WARNING]
 > **El Cuello de Botella de los Feature Flags en Bases de Datos Relacionales**: Si el estado de los *Feature Flags* se almacena en una tabla de parámetros dentro de la base de datos transaccional principal (por ejemplo, PostgreSQL u Oracle) y cada petición HTTP de los usuarios ejecuta un `SELECT habilitado FROM feature_flags WHERE codigo = '...'`, una aplicación con miles de peticiones por segundo saturará de inmediato el pool de conexiones y las lecturas de la base de datos.  
 > **Solución Arquitectónica**: Interponer obligatoriamente una **capa de caché en memoria (*In-Memory Data Store*)** como **Redis** o **Memcached** delante de la base de datos transaccional, de modo que la evaluación de *flags* se resuelva en memoria RAM y el motor relacional solo sea consultado ante un *cache miss* o invalidación explícita.
 
@@ -351,7 +348,6 @@ Si se tiene un predicado conjuntivo $p_1 \land p_2$ donde $p_1$ referencia solo 
 
 $$\sigma_{p_1 \land p_2}(E_1 \bowtie E_2) \equiv (\sigma_{p_1}(E_1)) \bowtie (\sigma_{p_2}(E_2))$$
 
-> [!TIP]
 > **Impacto en Rendimiento del *Selection Pushdown***: Reducir la cardinalidad de los operandos $E_1$ y $E_2$ antes del `JOIN` disminuye de forma multiplicativa el tamaño de las tablas temporales en memoria y el costo de emparejamiento de tuplas.
 
 #### 5. Eliminación de Proyecciones Redundantes en Cascada (Ley 8)
@@ -366,7 +362,6 @@ Sea $X = X_1 \cup X_2$ el conjunto de atributos finales requeridos tras el `JOIN
 
 $$\pi_{X}(E_1 \bowtie E_2) \equiv \pi_{X}\Big( \pi_{X_1 \cup J}(E_1) \bowtie \pi_{X_2 \cup J}(E_2) \Big)$$
 
-> [!IMPORTANT]
 > **Regla de Supervivencia de Atributos en el *Projection Pushdown***: Al proyectar sobre una rama inferior antes de un `JOIN`, **jamás se debe eliminar el atributo de enlace $J$ (clave foránea/primaria)** aunque no aparezca en el `SELECT` final del usuario; de lo contrario, el operador $\bowtie$ superior perdería la columna común para emparejar las tuplas y degeneraría en un producto cartesiano ($\times$).
 
 #### 7. Conmutatividad y Asociatividad de las Reuniones ($\bowtie$)
@@ -491,7 +486,6 @@ Considérese el esquema empresarial:
 
 **Requerimiento**: *Obtener el nombre de los empleados que devengan un salario superior a $\$5\,000\,000$ y trabajan en un departamento ubicado en `'Medellín'`*.
 
-> [!WARNING]
 > **Trampa Semántica del `NATURAL JOIN` ante Atributos Homónimos**: Tanto `EMPLEADOS` como `DEPARTAMENTOS` poseen un atributo llamado `nombre`. Si se aplica directamente `EMPLEADOS ⋈ DEPARTAMENTOS`, el operador de reunión natural emparejará por `id_departamento` **y simultáneamente exigirá que `EMPLEADOS.nombre = DEPARTAMENTOS.nombre`**, produciendo un conjunto vacío o erróneo. Para evitarlo en álgebra relacional, es obligatorio aplicar primero el **operador de renombramiento ($\rho$)** sobre el atributo homónimo de `DEPARTAMENTOS`.
 
 #### Script Ejecutable en RelaX (Comparativa Consulta Canónica vs. Consulta Optimizada):
