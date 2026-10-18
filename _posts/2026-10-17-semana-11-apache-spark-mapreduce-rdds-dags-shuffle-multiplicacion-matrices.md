@@ -373,7 +373,7 @@ El estudio de **Apache Spark y MapReduce** revela una profunda convergencia entr
 
 1. **Zaharia, M., Chowdhury, M., Das, T., Dave, A., Ma, J., McCauley, M., Franklin, M. J., Shenker, S., & Stoica, I. (2012)**. *Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing*. Proceedings of the 9th USENIX Symposium on Networked Systems Design and Implementation (NSDI '12), 15–28. [https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia](https://www.usenix.org/conference/nsdi12/technical-sessions/presentation/zaharia).
 2. **Dean, J., & Ghemawat, S. (2004)**. *MapReduce: Simplified Data Processing on Large Clusters*. Communications of the ACM, 51(1), 107–113. [https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/](https://research.google/pubs/mapreduce-simplified-data-processing-on-large-clusters/).
-3. **Leskovec, J., Rajaraman, A., & Ullman, J. D. (2020)**. *Mining of Massive Datasets* (3rd ed.). Cambridge University Press. Chapter 2: *MapReduce and the New Software Stack (Matrix Multiplication by MapReduce)*. [http://www.mmds.org/](http://www.mmds.org/).
+3. **Leskovec, J., Rajaraman, A., & Ullman, J. D. (2020)**. *Mining of Massive Datasets* (3rd ed.). Cambridge University Press. Chapter 2: *MapReduce and the New Software Stack (Matrix Multiplication by MapReduce)*. [https://www.mmds.org/](https://www.mmds.org/).
 4. **Apache Software Foundation (2026)**. *Spark Programming Guide: Resilient Distributed Datasets (RDDs), Transformations, Actions, and Shuffle Operations*. [https://spark.apache.org/docs/latest/rdd-programming-guide.html](https://spark.apache.org/docs/latest/rdd-programming-guide.html).
 
 ---
